@@ -19,6 +19,8 @@ namespace Baber_Shop
 
         private void Tukang_Cukur_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'barberShopDataSet.TukangCukur' table. You can move, or remove it, as needed.
+            this.tukangCukurTableAdapter.Fill(this.barberShopDataSet.TukangCukur);
 
         }
 

@@ -7,11 +7,16 @@ namespace Baber_Shop
     {
         string curFileName;
         string connectionString = "Data Source=LAPTOP-0SQR7EBD\\DZAKYHANIFANNAFI;" +
-            "Initial Catalog=informasiMhs;Integrated Security=True";
+            "Initial Catalog=BarberShop;Integrated Security=True";
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void Pelanggan_Click(object sender, EventArgs e)
@@ -36,13 +41,6 @@ namespace Baber_Shop
         {
             Tukang_Cukur tukangCukurForm = new Tukang_Cukur();
             tukangCukurForm.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'barberShopDataSet.Antrian' table. You can move, or remove it, as needed.
-            this.antrianTableAdapter.Fill(this.barberShopDataSet.Antrian);
-
         }
     }
 }

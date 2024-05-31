@@ -29,139 +29,68 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Pelanggan = new System.Windows.Forms.Button();
-            this.Antrian = new System.Windows.Forms.Button();
-            this.Pembookingan = new System.Windows.Forms.Button();
-            this.TukangCukur = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.barberShopDataSet = new Baber_Shop.BarberShopDataSet();
             this.antrianBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.antrianTableAdapter = new Baber_Shop.BarberShopDataSetTableAdapters.AntrianTableAdapter();
-            this.namapelangganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noantrianDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.waktutungguDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idantrianDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barberShopDataSet)).BeginInit();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.antrianBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Pelanggan
-            // 
-            this.Pelanggan.Location = new System.Drawing.Point(50, 30);
-            this.Pelanggan.Name = "Pelanggan";
-            this.Pelanggan.Size = new System.Drawing.Size(200, 40);
-            this.Pelanggan.TabIndex = 0;
-            this.Pelanggan.Text = "Data Pelanggan";
-            this.Pelanggan.UseVisualStyleBackColor = true;
-            this.Pelanggan.Click += new System.EventHandler(this.Pelanggan_Click);
-            // 
-            // Antrian
-            // 
-            this.Antrian.Location = new System.Drawing.Point(50, 90);
-            this.Antrian.Name = "Antrian";
-            this.Antrian.Size = new System.Drawing.Size(200, 40);
-            this.Antrian.TabIndex = 1;
-            this.Antrian.Text = "Pengelolaan Antrian";
-            this.Antrian.UseVisualStyleBackColor = true;
-            this.Antrian.Click += new System.EventHandler(this.Antrian_Click);
-            // 
-            // Pembookingan
-            // 
-            this.Pembookingan.Location = new System.Drawing.Point(50, 150);
-            this.Pembookingan.Name = "Pembookingan";
-            this.Pembookingan.Size = new System.Drawing.Size(200, 40);
-            this.Pembookingan.TabIndex = 2;
-            this.Pembookingan.Text = "Pembookingan";
-            this.Pembookingan.UseVisualStyleBackColor = true;
-            this.Pembookingan.Click += new System.EventHandler(this.Pembookingan_Click);
-            // 
-            // TukangCukur
-            // 
-            this.TukangCukur.Location = new System.Drawing.Point(50, 210);
-            this.TukangCukur.Name = "TukangCukur";
-            this.TukangCukur.Size = new System.Drawing.Size(200, 40);
-            this.TukangCukur.TabIndex = 3;
-            this.TukangCukur.Text = "Data Tukang Cukur";
-            this.TukangCukur.UseVisualStyleBackColor = true;
-            this.TukangCukur.Click += new System.EventHandler(this.TukangCukur_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.namapelangganDataGridViewTextBoxColumn,
-            this.noantrianDataGridViewTextBoxColumn,
-            this.waktutungguDataGridViewTextBoxColumn,
-            this.idantrianDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.antrianBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(305, 86);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(530, 150);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // barberShopDataSet
-            // 
-            this.barberShopDataSet.DataSetName = "BarberShopDataSet";
-            this.barberShopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // antrianBindingSource
             // 
             this.antrianBindingSource.DataMember = "Antrian";
-            this.antrianBindingSource.DataSource = this.barberShopDataSet;
             // 
-            // antrianTableAdapter
+            // button5
             // 
-            this.antrianTableAdapter.ClearBeforeFill = true;
+            this.button5.Location = new System.Drawing.Point(210, 117);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(135, 44);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Antrian";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Antrian_Click);
             // 
-            // namapelangganDataGridViewTextBoxColumn
+            // button6
             // 
-            this.namapelangganDataGridViewTextBoxColumn.DataPropertyName = "Nama_pelanggan";
-            this.namapelangganDataGridViewTextBoxColumn.HeaderText = "Nama_pelanggan";
-            this.namapelangganDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.namapelangganDataGridViewTextBoxColumn.Name = "namapelangganDataGridViewTextBoxColumn";
-            this.namapelangganDataGridViewTextBoxColumn.Width = 125;
+            this.button6.Location = new System.Drawing.Point(210, 182);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(135, 41);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Pembookingan";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Pembookingan_Click);
             // 
-            // noantrianDataGridViewTextBoxColumn
+            // button7
             // 
-            this.noantrianDataGridViewTextBoxColumn.DataPropertyName = "No_antrian";
-            this.noantrianDataGridViewTextBoxColumn.HeaderText = "No_antrian";
-            this.noantrianDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.noantrianDataGridViewTextBoxColumn.Name = "noantrianDataGridViewTextBoxColumn";
-            this.noantrianDataGridViewTextBoxColumn.Width = 125;
+            this.button7.Location = new System.Drawing.Point(210, 243);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(135, 36);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Tukang Cukur";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.TukangCukur_Click);
             // 
-            // waktutungguDataGridViewTextBoxColumn
+            // button8
             // 
-            this.waktutungguDataGridViewTextBoxColumn.DataPropertyName = "Waktu_tunggu";
-            this.waktutungguDataGridViewTextBoxColumn.HeaderText = "Waktu_tunggu";
-            this.waktutungguDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.waktutungguDataGridViewTextBoxColumn.Name = "waktutungguDataGridViewTextBoxColumn";
-            this.waktutungguDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idantrianDataGridViewTextBoxColumn
-            // 
-            this.idantrianDataGridViewTextBoxColumn.DataPropertyName = "Id_antrian";
-            this.idantrianDataGridViewTextBoxColumn.HeaderText = "Id_antrian";
-            this.idantrianDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idantrianDataGridViewTextBoxColumn.Name = "idantrianDataGridViewTextBoxColumn";
-            this.idantrianDataGridViewTextBoxColumn.Width = 125;
+            this.button8.Location = new System.Drawing.Point(210, 56);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(135, 42);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Pelanggan";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Pelanggan_Click);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1037, 300);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Pelanggan);
-            this.Controls.Add(this.Antrian);
-            this.Controls.Add(this.Pembookingan);
-            this.Controls.Add(this.TukangCukur);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Name = "Form1";
             this.Text = "Barber Shop";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barberShopDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.antrianBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -173,14 +102,17 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private BarberShopDataSet barberShopDataSet;
+        //private BarberShopDataSet barberShopDataSet;
         private System.Windows.Forms.BindingSource antrianBindingSource;
-        private BarberShopDataSetTableAdapters.AntrianTableAdapter antrianTableAdapter;
+        //private BarberShopDataSetTableAdapters.AntrianTableAdapter antrianTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn namapelangganDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noantrianDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn waktutungguDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idantrianDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
